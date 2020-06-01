@@ -1,0 +1,17 @@
+// $(function(){
+// 	$("#categoryID0").click(function(){
+// 		$("#categoryID0").addClass("active");
+// 	});
+// 	$("#categoryID1").click(function(){
+// 		$("#categoryID1").addClass("active");
+//     });
+// 	$("#categoryID2").click(function(){
+// 		$("#categoryID2").addClass("active");
+//     });
+// 	$("#categoryID3").click(function(){
+// 		$("#categoryID3").addClass("active");
+//     });
+// 	$("#categoryID4").click(function(){
+// 		$("#categoryID4").addClass("active");
+// 	});    
+// });

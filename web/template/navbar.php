@@ -1,3 +1,11 @@
+<?php
+// $query = $db->query("SELECT * FROM product_categories ORDER BY product_categoryID ASC");
+// $product_categories = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+
+   <!-- *** NAVBAR ***
+_________________________________________________________ -->
 <div class="py-1 bg-primary">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
@@ -29,7 +37,7 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 			  <li class="nav-item"><a href="../index.php" class="nav-link">首頁</a></li>
-			  <li class="nav-item active"><a href="shop.php" class="nav-link">產品介紹</a></li>
+			  <li class="nav-item active"><a href="shop.php?categoryID=0" class="nav-link">產品介紹</a></li>
 	          <!-- <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">購買</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -43,7 +51,7 @@
 	          <li class="nav-item"><a href="about.php" class="nav-link">關於我們</a></li>
 	          <!-- <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li> -->
 	          <li class="nav-item"><a href="contact.php" class="nav-link">連絡我們</a></li>
-	          <li class="nav-item cta cta-colored"><a href="cart.php" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+	          <li class="nav-item cta cta-colored"><a href="cart.php" class="nav-link"><span class="icon-shopping_cart"></span>[<?php  if(isset($_SESSION['Cart']) && $_SESSION['Cart'] != null) echo count($_SESSION['Cart']); else echo "0"; ?>]</a></li>
 
 	        </ul>
 	      </div>
