@@ -58,7 +58,7 @@ $all_products = $query->fetchAll(PDO::FETCH_ASSOC);
 
                   <?php foreach($all_products as $products){  ?>
                     <tr>
-                      <td><img src="../../images/<?php echo $products['picture']; ?>" width="50" alt="<?php echo $products['picture']; ?>"></td>
+                      <td><img src="../../images/uploads/products/<?php echo $products['picture']; ?>" width="50" alt="<?php echo $products['picture']; ?>"></td>
                       <td><?php echo $products['name']; ?></td>
                       <td><?php echo $products['price']; ?></td>
                       <td><?php echo $products['description']; ?></td> 

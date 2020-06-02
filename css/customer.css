@@ -4,3 +4,9 @@
 #content #error-page {
     text-align: center;
 }
+.ctfont .h1{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/* .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+ } */

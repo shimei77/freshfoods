@@ -11,7 +11,7 @@ if(isset($_POST['AddForm']) && $_POST['AddForm'] == "INSERT"){
       //圖片上傳程式碼
   if(isset($_FILES['picture']['name'])){
     $filename = $_FILES['picture']['name'];
-    $file_path = "../../images/".$_FILES['picture']['name'];
+    $file_path = "../../images/uploads/products/".$_FILES['picture']['name'];
     move_uploaded_file($_FILES['picture']['tmp_name'], $file_path);
   }else{
     $filename = null;

@@ -69,7 +69,7 @@ if(isset($_POST['EditForm']) && $_POST['EditForm'] == "EDIT"){
                     <input type="hidden" name="productID" value="<?php echo $_GET['productID']; ?>">
                     <input type="hidden" name="product_categoryID" value="<?php echo $_GET['categoryID']; ?>">    
                 </div>
-                <button a href="list.php" class="btn mr-3 btn-primary">取消並回上一頁</button>
+                <a href="list.php?categoryID=<?php echo $_GET['categoryID']; ?>" class="btn mr-3 btn-primary">取消並回上一頁</a>
                 <button type="submit" class="btn btn-secondary">確定送出</button>
               </form>
             </div> 

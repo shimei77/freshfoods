@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('../connection/connection.php');
-$limit = 8;
+$limit = 2;
 if (isset($_GET['page'])) {
 	$page = $_GET['page'];
 } else {
@@ -17,7 +17,6 @@ if ($_GET['categoryID']== 0){
 
 $products = $query->fetchAll(PDO::FETCH_ASSOC);
 // print_r($products);
-
 ?>
 
 <!DOCTYPE html>
@@ -34,41 +33,6 @@ $products = $query->fetchAll(PDO::FETCH_ASSOC);
 	<section class="ftco-section">
 		<div class="container">
 			<!-- 產品分類開始 屆時用jquery控制-->
-			<?php	
-			$query3 = $db->query("SELECT * FROM product_categories" );
-			$category_number=$query3->fetchAll(PDO::FETCH_ASSOC);
-			$total_categories = ceil(count($category_number));
-			// print_r($category_number);
-			// echo 'qqqqqqqqqqqqqqqqqqqqqqqqqqqqqq<br>' ;
-			// echo 'total_pages='.$total_categories;
-			?>
-
-			<div class="row justify-content-center">
-				<div class="col-md-10 mb-5 text-center">
-					<ul class="product-category">
-					<?php if ($_GET['categoryID']==0 ) { ?>
-									<li><a href="shop.php?categoryID=0" class="active">All</a></li>
-									<?php }else{ ?>
-										<li><a href="shop.php?categoryID=0">All</a></li>
-								<?php }; ?>
-					<?php for ($i = 0; $i < $total_categories; $i++) { ?>
-						<?php if ($category_number[$i]['product_categoryID']==$_GET['categoryID'] ) { ?>					
-
-
-									<li><a href="shop.php?categoryID=<?php echo $category_number[$i]['product_categoryID']; ?>" class="active"><?php echo $category_number[$i]['category']; ?></a>
-									</li>
-									<?php }else{ ?>
-									<li><a href="shop.php?categoryID=<?php echo $category_number[$i]['product_categoryID']; ?>"><?php echo $category_number[$i]['category']; ?></a>
-									</li>
-									<?php } ?>
-								<?php } ?>
-					</ul>
-				</div>
-			</div>
-
-
-
-			<!-- 原版程式碼，先保存一份以防萬一
 			<div class="row justify-content-center">
 				<div class="col-md-10 mb-5 text-center">
 					<ul class="product-category">
@@ -79,7 +43,7 @@ $products = $query->fetchAll(PDO::FETCH_ASSOC);
 						<li><a href="shop.php?categoryID=4">堅果</a></li>
 					</ul>
 				</div>
-			</div> -->
+			</div>
 			<!-- 產品分類結束 -->
 
 
@@ -122,15 +86,11 @@ $products = $query->fetchAll(PDO::FETCH_ASSOC);
 
 			<!-- 頁次處理開始 -->
 			<?php
-			if ($_GET['categoryID']== 0){
 			$query2 = $db->query("SELECT * FROM products");
-			}else{
-			$query2 = $db->query("SELECT * FROM products WHERE product_categoryID = " . $_GET['categoryID'] );
-			}
 			$data = $query2->fetchAll(PDO::FETCH_ASSOC);
 			$total_pages = ceil(count($data) / $limit);
-			// echo 'oao oao oao' ;
-			// echo 'total_pages='.$total_pages;
+			echo 'oao oao oao' ;
+			echo 'total_pages='.$total_pages;
 			?>
 
 			<div class="row mt-5">

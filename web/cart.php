@@ -71,7 +71,7 @@ print_r($_SESSION['Cart']);
 
 									<td class="quantity">
 										<div class="input-group mb-3">
-											<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+											<input type="text" name="quantity" class="quantity form-control input-number" value=<?php echo $_SESSION['Cart'][$i]['quantity']; ?> min="1" max="100">
 										</div>
 									</td>
 
@@ -89,41 +89,7 @@ print_r($_SESSION['Cart']);
 				</div>
 			</div>
 			<div class="row justify-content-end">
-				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-					<div class="cart-total mb-3">
-						<h3>Coupon Code</h3>
-						<p>Enter your coupon code if you have one</p>
-						<form action="#" class="info">
-							<div class="form-group">
-								<label for="">Coupon code</label>
-								<input type="text" class="form-control text-left px-3" placeholder="">
-							</div>
-						</form>
-					</div>
-					<p><a href="checkout.php" class="btn btn-primary py-3 px-4">Apply Coupon</a></p>
-				</div>
-				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-					<div class="cart-total mb-3">
-						<h3>Estimate shipping and tax</h3>
-						<p>Enter your destination to get a shipping estimate</p>
-						<form action="#" class="info">
-							<div class="form-group">
-								<label for="">Country</label>
-								<input type="text" class="form-control text-left px-3" placeholder="">
-							</div>
-							<div class="form-group">
-								<label for="country">State/Province</label>
-								<input type="text" class="form-control text-left px-3" placeholder="">
-							</div>
-							<div class="form-group">
-								<label for="country">Zip/Postal Code</label>
-								<input type="text" class="form-control text-left px-3" placeholder="">
-							</div>
-						</form>
-					</div>
-					<p><a href="checkout.php" class="btn btn-primary py-3 px-4">Estimate</a></p>
-				</div>
-				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+				<div class="col-lg-12 mt-5 cart-wrap ftco-animate">
 					<div class="cart-total mb-3">
 						<h3>訂單總計</h3>
 						<p class="d-flex">

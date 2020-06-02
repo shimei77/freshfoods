@@ -52,9 +52,9 @@ unset($_SESSION['Cart']);
         <div id="content">
             <div class="container">
 
-                <div class="col-md-12">
+                <div class="col-md-12" >
 
-                    <ul class="breadcrumb">
+                    <ul class="breadcrumb ">
                         <li><a href="#">首頁</a>
                         </li>
                         <li>我的購物車</li>
@@ -67,13 +67,13 @@ unset($_SESSION['Cart']);
                             <div class="box">
 
                                 <p class="text-center">
-                                    <img src="../img/logo.png" alt="freshfoods logo">
+                                    <img src="../images/freshfoods_logo.png" alt="freshfoods logo">
                                 </p>
                               
                                 <h3>結帳成功</h3>
                                 
-                                <p class="text-center">@@您已成功完成購物，您可前往<a href="customer-orders.php">我的訂單</a>查詢出貨進度或<a href="product_list.php?categoryID=1">繼續購物</a></p>
-                                <a href="function/Opay/Credit_CreateOrder.php" class="btn btn-primary">付款去</a>
+                                <p class="text-center">您已成功完成購物，您可前往<a href="customer-orders.php">我的訂單</a>查詢出貨進度或<a href="shop.php?categoryID=0">繼續購物</a></p>
+                                <a href="../function/opay/Credit_CreateOrder.php" class="btn btn-primary">付款去</a>
 
                             </div>
                         </div>

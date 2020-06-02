@@ -1,4 +1,4 @@
-1 後台 product_categories/list->EDIT 編輯內容，按"取消並回到上一頁"，但內容仍被更新   
+﻿1 前 checkout 多一個郵遞區號塊  「下一步」可以不要嗎
 2 後台 admin/products/create.php 用TAB鍵跑到價格
-3 上傳圖片時，可以限定擴張子嗎？
-4 圖片上傳
+3 order_success.php 小視窗不靠中
+4 中文字體裝上去
