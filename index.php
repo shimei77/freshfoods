@@ -1,4 +1,13 @@
 <!-- 樣板來源：https://colorlib.com/wp/template/vegefoods/ -->
+<?php
+// session_start();
+require_once('connection/connection.php');
+
+$query = $db->query("SELECT * FROM products");
+$products = $query->fetchAll(PDO::FETCH_ASSOC);
+// print_r($products);
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -243,234 +252,47 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="青椒">
-							<span class="status">30%</span>
-							<div class="overlay"></div>
-						</a>
-						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">青椒</a></h3>
-							<div class="d-flex">
-								<div class="pricing">
-									<p class="price"><span class="mr-2 price-dc">NT 120.00</span><span class="price-sale">NT 80.00</span></p>
-								</div>
-							</div>
-							<div class="bottom-area d-flex px-3">
-								<div class="m-auto d-flex">
-									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-										<span><i class="ion-ios-menu"></i></span>
-									</a>
-									<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-										<span><i class="ion-ios-cart"></i></span>
-									</a>
-									<a href="#" class="heart d-flex justify-content-center align-items-center ">
-										<span><i class="ion-ios-heart"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="草莓">
-							<div class="overlay"></div>
-						</a>
-						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">草莓</a></h3>
-							<div class="d-flex">
-								<div class="pricing">
-									<p class="price"><span>NT 120.00</span></p>
-								</div>
-							</div>
-							<div class="bottom-area d-flex px-3">
-								<div class="m-auto d-flex">
-									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-										<span><i class="ion-ios-menu"></i></span>
-									</a>
-									<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-										<span><i class="ion-ios-cart"></i></span>
-									</a>
-									<a href="#" class="heart d-flex justify-content-center align-items-center ">
-										<span><i class="ion-ios-heart"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="四季豆">
-							<div class="overlay"></div>
-						</a>
-						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">四季豆</a></h3>
-							<div class="d-flex">
-								<div class="pricing">
-									<p class="price"><span>NT 120.00</span></p>
-								</div>
-							</div>
-							<div class="bottom-area d-flex px-3">
-								<div class="m-auto d-flex">
-									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-										<span><i class="ion-ios-menu"></i></span>
-									</a>
-									<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-										<span><i class="ion-ios-cart"></i></span>
-									</a>
-									<a href="#" class="heart d-flex justify-content-center align-items-center ">
-										<span><i class="ion-ios-heart"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="紫甘藍">
-							<div class="overlay"></div>
-						</a>
-						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">紫甘藍</a></h3>
-							<div class="d-flex">
-								<div class="pricing">
-									<p class="price"><span>NT 120.00</span></p>
-								</div>
-							</div>
-							<div class="bottom-area d-flex px-3">
-								<div class="m-auto d-flex">
-									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-										<span><i class="ion-ios-menu"></i></span>
-									</a>
-									<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-										<span><i class="ion-ios-cart"></i></span>
-									</a>
-									<a href="#" class="heart d-flex justify-content-center align-items-center ">
-										<span><i class="ion-ios-heart"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
+			<!-- 產品list開始 -->
+			<?php 
+			$i=1;
+			foreach ($products as $product) { ?>
+				<?php if($i<=8){ ?>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="product">
+							<a href="web/product-single.php?productID=<?php echo $product['productID']; ?>" class="img-prod"><img class="img-fluid" src="images/uploads/products/<?php echo $product['picture']; ?>" alt="Colorlib Template">
+								<span class="status">30%</span>
+								<div class="overlay"></div>
+							</a>
+							<div class="text py-3 pb-4 px-3 text-center">
+								<h3><a href="web/product-single.php?productID=<?php echo $product['productID']; ?>"><?php echo $product['name']; ?></a> </h3>
+								<div class="d-flex">
+									<div class="pricing">
+										<p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+									</div>
+								</div>
+								<div class="bottom-area d-flex px-3">
+									<div class="m-auto d-flex">
+										<a href="web/product-single.php?productID=<?php echo $product['productID']; ?>" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+											<span><i class="ion-ios-menu"></i></span>
+										</a>
+										<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+											<span><i class="ion-ios-cart"></i></span>
+										</a>
+										<a href="#" class="heart d-flex justify-content-center align-items-center ">
+											<span><i class="ion-ios-heart"></i></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-5.jpg" alt="番茄">
-							<span class="status">30%</span>
-							<div class="overlay"></div>
-						</a>
-						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">番茄</a></h3>
-							<div class="d-flex">
-								<div class="pricing">
-									<p class="price"><span class="mr-2 price-dc">NT 120.00</span><span class="price-sale">NT 80.00</span></p>
-								</div>
-							</div>
-							<div class="bottom-area d-flex px-3">
-								<div class="m-auto d-flex">
-									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-										<span><i class="ion-ios-menu"></i></span>
-									</a>
-									<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-										<span><i class="ion-ios-cart"></i></span>
-									</a>
-									<a href="#" class="heart d-flex justify-content-center align-items-center ">
-										<span><i class="ion-ios-heart"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-6.jpg" alt="花耶菜">
-							<div class="overlay"></div>
-						</a>
-						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">花耶菜</a></h3>
-							<div class="d-flex">
-								<div class="pricing">
-									<p class="price"><span>NT 120.00</span></p>
-								</div>
-							</div>
-							<div class="bottom-area d-flex px-3">
-								<div class="m-auto d-flex">
-									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-										<span><i class="ion-ios-menu"></i></span>
-									</a>
-									<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-										<span><i class="ion-ios-cart"></i></span>
-									</a>
-									<a href="#" class="heart d-flex justify-content-center align-items-center ">
-										<span><i class="ion-ios-heart"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-7.jpg" alt="胡蘿蔔">
-							<div class="overlay"></div>
-						</a>
-						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">胡蘿蔔</a></h3>
-							<div class="d-flex">
-								<div class="pricing">
-									<p class="price"><span>NT 120.00</span></p>
-								</div>
-							</div>
-							<div class="bottom-area d-flex px-3">
-								<div class="m-auto d-flex">
-									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-										<span><i class="ion-ios-menu"></i></span>
-									</a>
-									<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-										<span><i class="ion-ios-cart"></i></span>
-									</a>
-									<a href="#" class="heart d-flex justify-content-center align-items-center ">
-										<span><i class="ion-ios-heart"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-8.jpg" alt="果汁">
-							<div class="overlay"></div>
-						</a>
-						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">果汁</a></h3>
-							<div class="d-flex">
-								<div class="pricing">
-									<p class="price"><span>NT 120.00</span></p>
-								</div>
-							</div>
-							<div class="bottom-area d-flex px-3">
-								<div class="m-auto d-flex">
-									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-										<span><i class="ion-ios-menu"></i></span>
-									</a>
-									<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-										<span><i class="ion-ios-cart"></i></span>
-									</a>
-									<a href="#" class="heart d-flex justify-content-center align-items-center ">
-										<span><i class="ion-ios-heart"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+					<?php $i++;} ?>
+				<?php } ?>
+
+			<!-- 產品list結束 -->
+
 			</div>
 		</div>
 	</section>
@@ -503,7 +325,7 @@
 			<div class="row justify-content-center mb-5 pb-3">
 				<div class="col-md-7 heading-section ftco-animate text-center">
 					<span class="subheading">客戶心聲</span>
-					<h2 class="mb-4">我們優質客戶這樣說</h2>
+					<h2 class="mb-4">我們優質客戶的感想</h2>
 					<p>聽聽我們的客戶，選用我們的產品後，實際的感受</p>
 				</div>
 			</div>

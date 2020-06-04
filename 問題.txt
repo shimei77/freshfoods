@@ -1,4 +1,0 @@
-﻿1 前 checkout 多一個郵遞區號塊  「下一步」可以不要嗎
-2 後台 admin/products/create.php 用TAB鍵跑到價格
-3 order_success.php 小視窗不靠中
-4 中文字體裝上去

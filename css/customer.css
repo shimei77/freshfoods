@@ -4,9 +4,15 @@
 #content #error-page {
     text-align: center;
 }
-.ctfont .h1{
+body{
     font-family: 'Noto Sans TC', sans-serif;
 }
-/* .owl-carousel.home-slider .slider-item .slider-text h1 {
+/* #ftco-navbar .container #ftco-nav {
+	font-size: 50px;
+} */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+	font-size: 16px;
+}
+.owl-carousel.home-slider .slider-item .slider-text h1{
     font-family: 'Noto Sans TC', sans-serif;
- } */
+}

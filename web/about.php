@@ -27,13 +27,12 @@
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section-bold mb-4 mt-md-5">
 	          	<div class="ml-md-0">
-		            <h2 class="mb-4">Welcome to Vegefoods an eCommerce website</h2>
+		            <h2 class="mb-4">歡迎光臨鮮果蔬電子商務網站</h2>
 	            </div>
 	          </div>
 	          <div class="pb-md-5">
-	          	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							<p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
-							<p><a href="#" class="btn btn-primary">Shop now</a></p>
+	          	<p>鮮果蔬提供新鮮有機蔬菜、水果、各類果汁及堅果。本公司所有產品，均能追及產地履歷，提供您安心健康的購物。</p>
+							<p><a href="shop.php?categoryID=0" class="btn btn-primary">購物去</a></p>
 						</div>
 					</div>
 				</div>
@@ -102,93 +101,93 @@
     	</div>
     </section>
 		
-		<section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-          	<span class="subheading">Testimony</span>
-            <h2 class="mb-4">Our satisfied customer says</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url(../images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url(../images/person_2.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Interface Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url(../images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">UI Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url(../images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url(../images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">System Analyst</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="ftco-section testimony-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<span class="subheading">客戶心聲</span>
+					<h2 class="mb-4">我們優質客戶這樣說</h2>
+					<p>聽聽我們的客戶，選用我們的產品後，實際的感受</p>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel">
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(../images/images.jfif)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">測試1Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="name">Garreth Smith</p>
+									<span class="position">Marketing Manager</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(../images/person_2.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">測試2Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="name">Garreth Smith</p>
+									<span class="position">Interface Designer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(../images/person_3.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">測試3Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="name">Garreth Smith</p>
+									<span class="position">UI Designer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(../images/person_1.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">測試四Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="name">Garreth Smith</p>
+									<span class="position">Web Developer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(../images/person_1.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">測試五Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="name">Garreth Smith</p>
+									<span class="position">System Analyst</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <section class="ftco-section bg-light">
 			<div class="container">

@@ -201,9 +201,9 @@ require_once('../connection/connection.php');
 			//     'countySel'   : ;
 			//     'districtSel' : ;
 			// });
-			// $('#twzipcode').find('select[name="county"]').eq(1).remove();
-			// $('#twzipcode').find('select[name="district"]').eq(1).remove();
-			// $('#twzipcode').find('input[name="zipcode"]').eq(1).remove();
+			$('#twzipcode').find('select[name="county"]').eq(1).remove();
+			$('#twzipcode').find('select[name="district"]').eq(1).remove();
+			$('#twzipcode').find('input[name="zipcode"]').eq(1).remove();
 		});
 	</script>
 

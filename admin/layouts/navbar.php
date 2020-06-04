@@ -11,7 +11,7 @@
           <li class="nav-item"> <a class="nav-link" href="../product_categories/list.php">商品管理</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#">會員管理</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#">訂單管理</a> </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">管理者 <?php echo $_SESSION['user']; ?></a>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="../functions/logout.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">管理者 <?php echo $_SESSION['user']; ?></a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="ml-3" href="../functions/logout.php">登出</a></div>
           </li>
