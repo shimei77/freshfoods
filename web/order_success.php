@@ -55,9 +55,9 @@ unset($_SESSION['Cart']);
                 <div class="col-md-12" >
 
                     <ul class="breadcrumb ">
-                        <li><a href="#">首頁</a>
+                        <li><a href="#">首頁/</a>
                         </li>
-                        <li>我的購物車</li>
+                        <li>我的購物車/</li>
                         <li>結帳成功</li>
                     </ul>
 

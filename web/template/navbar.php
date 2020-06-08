@@ -37,7 +37,7 @@ _________________________________________________________ -->
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 			  <li class="nav-item"><a href="../index.php" class="nav-link">首頁</a></li>
-			  <li class="nav-item active"><a href="shop.php?categoryID=0" class="nav-link">產品介紹</a></li>
+			  <li class="nav-item"><a href="shop.php?categoryID=0" class="nav-link">產品介紹</a></li>
 	          <!-- <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">購買</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">

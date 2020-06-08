@@ -78,8 +78,8 @@ $products = $query->fetchAll(PDO::FETCH_ASSOC);
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.php" class="nav-link">首頁</a></li>
-					<li class="nav-item active"><a href="web/shop.php?categoryID=0" class="nav-link">產品介紹</a></li>
+					<li class="nav-item"><a href="index.php" class="nav-link">首頁</a></li>
+					<li class="nav-item"><a href="web/shop.php?categoryID=0" class="nav-link">產品介紹</a></li>
 					<!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">購買</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -443,8 +443,8 @@ $products = $query->fetchAll(PDO::FETCH_ASSOC);
 				<div class="col-md-6 d-flex align-items-center">
 					<form action="#" class="subscribe-form">
 						<div class="form-group d-flex">
-							<input type="text" class="form-control" placeholder="Enter email address">
-							<input type="submit" value="Subscribe" class="submit px-3">
+							<input type="text" class="form-control" placeholder="輸入電子郵件信箱">
+							<input type="submit" value="訂閱" class="submit px-3">
 						</div>
 					</form>
 				</div>

@@ -6,8 +6,8 @@ if(isset($_POST['quantity']) && $_POST['quantity'] != null){
         $_SESSION['Cart'][$i]['product_name'] = $_POST['quantity'][$i];
     }
 }
-echo "SESSION[Cart]= <br>";
-print_r($_SESSION['Cart']);
+// echo "SESSION[Cart]= <br>";
+// print_r($_SESSION['Cart']);
 ?>
 
 
@@ -41,10 +41,13 @@ print_r($_SESSION['Cart']);
 								<tr class="text-center">
 									<!-- <th>&nbsp;</th>
 						        <th>&nbsp;</th> -->
-									<th colspan="2">產品名稱</th>
+									<th>刪除</th>
+									<th>圖片</th>
+									<th>產品名稱</th>
 									<th>單價</th>
 									<th>數量</th>
-									<th colspan="2">小計</th>
+									<th>小計</th>
+									<!-- <th colspan="2">小計</th> -->
 								</tr>
 							</thead>
 							<tbody>

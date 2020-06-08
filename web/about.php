@@ -43,14 +43,14 @@
       <div class="container py-4">
         <div class="row d-flex justify-content-center py-5">
           <div class="col-md-6">
-          	<h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-          	<span>Get e-mail updates about our latest shops and special offers</span>
+          	<h2 style="font-size: 22px;" class="mb-0">訂閱電子報</h2>
+          	<span>請輸入您有效的E-Mail，即可不定時接收FRESHFOODS的最新優惠活動~</span>
           </div>
           <div class="col-md-6 d-flex align-items-center">
             <form action="#" class="subscribe-form">
               <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Enter email address">
-                <input type="submit" value="Subscribe" class="submit px-3">
+                <input type="text" class="form-control" placeholder="輸入電子郵件信箱">
+                <input type="submit" value="訂閱" class="submit px-3">
               </div>
             </form>
           </div>

@@ -1,0 +1,15 @@
+﻿1 前 checkout 多一個郵遞區號塊  「下一步」可以不要嗎
+2 後台 admin/products/create.php 用TAB鍵跑到價格
+3 order_success.php 小視窗不靠中
+4 中文字體裝上去  css不聽話
+	.aaa > p  大於（>）只會影響到直接的小孩
+	.aaa p 所有.aaa後面的p容器都會被影響
+	.aaa 所有.aaa下面的都會繼承.aaa的設定
+	.aaa .bbb  ???.aaa後面，有.bbb才會有作用？
+	.aaa.bbb  ???
+	直接設個id會不會比較快？
+
+
+
+
+wireframe軟體  https://sofree.cc/mockflow/
